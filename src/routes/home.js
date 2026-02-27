@@ -68,13 +68,13 @@ const Home = () => {
                             This is an advanced Drivers Hub solution for Euro Truck Simulator 2 / American Truck Simulator VTCs.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: "5px" }}>
-                            This project was started by <span style={{ color: "#5BA3F5" }}><a href="https://charlws.com/" target="_blank" rel="noreferrer">CharlesWithC</a></span> in May 2022, initially for <span style={{ color: "#5BA3F5" }}>At The Mile Logistics</span>, then grew to become a public service. It was created out of <span style={{ color: "#5BA3F5" }}>interest and passion</span>, as a <span style={{ color: "#5BA3F5" }}>technical experiment</span> to architect and optimize interesting things.
+                            This project was started in May 2022, originally solo-built by <span style={{ color: "#5BA3F5" }}><a href="https://charlws.com/" target="_blank" rel="noreferrer">CharlesWithC</a></span> for <span style={{ color: "#5BA3F5" }}>At The Mile Logistics</span> for internal use, then grew to become a <span style={{ color: "#5BA3F5" }}>public service</span>, and finally <span style={{ color: "#5BA3F5" }}>open-sourced</span> in December 2025.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: "5px" }}>
-                            The project was <span style={{ color: "#5BA3F5" }}>open-sourced</span> in December 2025 on <span style={{ color: "#5BA3F5" }}><a href="https://github.com/CharlesWithC" target="_blank" rel="noreferrer">GitHub</a></span>.
+                            It was created out of <span style={{ color: "#5BA3F5" }}>interest and passion</span>, as a <span style={{ color: "#5BA3F5" }}>technical experiment</span> to architect and optimize interesting things.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: "5px" }}>
-                            Give it a <span style={{ color: "#fcd116" }}>⭐ star</span> and read the <span style={{ color: "#5BA3F5" }}><a href="https://wiki.charlws.com/books/chub/page/2025-dec-an-update" target="_blank" rel="noreferrer">blog post</a></span> about why the decision was made.
+                            Give it a <span style={{ color: "#fcd116" }}>⭐ star</span> and read the <span style={{ color: "#5BA3F5" }}><a href="https://wiki.charlws.com/books/chub/page/2025-dec-an-update" target="_blank" rel="noreferrer">blog post</a></span> to learn about the reason that the project was open-sourced.
                         </Typography>
                         <Typography variant="body1" sx={{ mb: "5px" }}>
                             This website is the home page for the open-source project. To create or manage a Drivers Hub, please visit <span style={{ color: "#5BA3F5" }}><a href="https://admin.chub.page/" target="_blank" rel="noreferrer">CHub Portal</a></span>.
