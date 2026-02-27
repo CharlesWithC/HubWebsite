@@ -1,0 +1,8 @@
+{
+  "short_name": "Drivers Hub",
+  "name": "The best Drivers Hub solution.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2fc1f7",
+  "background_color": "#2e3035"
+}
