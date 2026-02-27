@@ -62,7 +62,7 @@ const Home = () => {
                 <Card>
                     <CardContent>
                         <Typography variant="h5" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mb: "10px" }}>
-                            <InfoRounded />&nbsp;&nbsp;The Drivers Hub Project (CHub)
+                            The Drivers Hub Project (CHub)
                         </Typography>
                         <Typography variant="body1" sx={{ mb: "5px" }}>
                             This is an advanced Drivers Hub solution for Euro Truck Simulator 2 / American Truck Simulator VTCs.
@@ -79,7 +79,7 @@ const Home = () => {
                         <Typography variant="body1" sx={{ mb: "5px" }}>
                             This website is the home page for the open-source project. To create or manage a Drivers Hub, please visit <span style={{ color: "#5BA3F5" }}><a href="https://admin.chub.page/" target="_blank" rel="noreferrer">CHub Portal</a></span>.
                         </Typography>
-                        <CardMedia component="img" image="/images/user-banner.webp" sx={{ width: "80%", borderRadius: "5px" }} />
+                        <CardMedia component="img" image="/images/user-banner.webp" sx={{ width: window.innerWidth >= 960 ? "80%" : "100%", borderRadius: "5px" }} />
                     </CardContent>
                 </Card>
             </Grid>
