@@ -1,4 +1,4 @@
-import { HomeRounded, StarRounded, FlightTakeoff, MapRounded, StorageRounded, WebRounded } from '@mui/icons-material';
+import { HomeRounded, StarRounded, FlightTakeoff, MapRounded, StorageRounded, WebRounded, PeopleRounded } from '@mui/icons-material';
 import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 
 import SimpleBar from 'simplebar-react';
@@ -65,11 +65,11 @@ const SideBar = (props) => {
         };
     }, []);
 
-    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "external": "Managed Service" };
-    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "external": <FlightTakeoff /> };
-    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "external": "https://github.com/CharlesWithC/HubWebsite/wiki/Managed-Service-Providers" };
+    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "discord": "Discord Community", "external": "Managed Service" };
+    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "discord": <PeopleRounded />, "external": <FlightTakeoff /> };
+    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "discord": "https://discord.gg/wNTaaBZ5qd", "external": "https://github.com/CharlesWithC/HubWebsite/wiki/Managed-Service-Providers" };
 
-    let menu = [["home", "features", "live_map"], ["backend", "frontend"], ["external"]];
+    let menu = [["home", "features", "live_map"], ["backend", "frontend"], ["discord", "external"]];
 
     let routeIndex = {};
     for (let i = 0; i < menu.length; i++) {
