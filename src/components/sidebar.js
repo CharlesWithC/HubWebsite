@@ -65,11 +65,11 @@ const SideBar = (props) => {
         };
     }, []);
 
-    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "portal": "CHub Portal" };
-    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "portal": <FlightTakeoff /> };
-    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "portal": "https://admin.chub.page/" };
+    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "external": "Managed Service" };
+    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "external": <FlightTakeoff /> };
+    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "external": "https://github.com/CharlesWithC/HubWebsite/wiki/Managed-Service-Providers" };
 
-    let menu = [["home", "features", "live_map"], ["backend", "frontend"], ["portal"]];
+    let menu = [["home", "features", "live_map"], ["backend", "frontend"], ["external"]];
 
     let routeIndex = {};
     for (let i = 0; i < menu.length; i++) {

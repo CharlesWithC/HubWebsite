@@ -27,7 +27,7 @@ const drivershub = `    ____       _                         __  __      __
 function App() {
     useEffect(() => {
         console.log(drivershub);
-        console.log("The Drivers Hub Project (CHub)");
+        console.log("The Drivers Hub Project");
         console.log(`Copyright (C) 2022-2026 CharlesWithC All rights reserved.`);
     }, []);
 
@@ -151,13 +151,13 @@ function App() {
                                     Proudly Made in Canada 🇨🇦
                                 </Typography>
                                 <Typography variant="body2" sx={{ marginLeft: "auto", alignSelf: 'flex-end', textAlign: "right", fontWeight: "bold" }}>
-                                    The Drivers Hub Project (CHub)
+                                    The Drivers Hub Project
                                     <br />
-                                    <a href="https://wiki.charlws.com/books/changelog" target="_blank" rel="noreferrer">Changelog</a>
-                                    &nbsp;|&nbsp;
                                     <a href="https://github.com/CharlesWithC" target="_blank" rel="noreferrer">GitHub</a>
                                     &nbsp;|&nbsp;
                                     <a href="https://discord.gg/wNTaaBZ5qd" target="_blank" rel="noreferrer">Discord</a>
+                                    &nbsp;|&nbsp;
+                                    <a href="https://wiki.charlws.com/books/changelog" target="_blank" rel="noreferrer">Change Log</a>
                                     &nbsp;|&nbsp;
                                     <a href="https://wiki.charlws.com/" target="_blank" rel="noreferrer">Wiki</a>
                                 </Typography>
@@ -166,11 +166,11 @@ function App() {
                                 <Typography variant="body2" sx={{ fontWeight: "bold" }}>
                                     &copy; 2022-2026 <a href="https://charlws.com/" target="_blank" rel="noreferrer">CharlesWithC</a>
                                     <br />
-                                    <a href="https://wiki.charlws.com/books/changelog" target="_blank" rel="noreferrer">Changelog</a>
-                                    &nbsp;|&nbsp;
                                     <a href="https://github.com/CharlesWithC" target="_blank" rel="noreferrer">GitHub</a>
                                     &nbsp;|&nbsp;
                                     <a href="https://discord.gg/wNTaaBZ5qd" target="_blank" rel="noreferrer">Discord</a>
+                                    &nbsp;|&nbsp;
+                                    <a href="https://wiki.charlws.com/books/changelog" target="_blank" rel="noreferrer">Change Log</a>
                                     &nbsp;|&nbsp;
                                     <a href="https://wiki.charlws.com/" target="_blank" rel="noreferrer">Wiki</a>
                                 </Typography>
