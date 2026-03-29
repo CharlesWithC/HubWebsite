@@ -308,31 +308,31 @@ const Home = () => {
                                     <ListItemIcon sx={{ minWidth: 28 }}>
                                         <ChevronRightRounded sx={{ fontSize: 24 }} />
                                     </ListItemIcon>
-                                    <ListItemText primary={<a href="https://hub.atmvtc.com/" target="_blank" rel="noreferrer">At The Mile Logistics</a>} />
+                                    <ListItemText primary={<a href="https://atmvtc.com/" target="_blank" rel="noreferrer">At The Mile Logistics</a>} />
                                 </ListItem>
                                 <ListItem sx={{ px: 0.5 }}>
                                     <ListItemIcon sx={{ minWidth: 28 }}>
                                         <ChevronRightRounded sx={{ fontSize: 24 }} />
                                     </ListItemIcon>
-                                    <ListItemText primary={<a href="https://drivershub.ets2mcg.org/" target="_blank" rel="noreferrer">ETS2MCG</a>} />
+                                    <ListItemText primary={<a href="https://ets2mcg.org/" target="_blank" rel="noreferrer">ETS2MCG</a>} />
                                 </ListItem>
                                 <ListItem sx={{ px: 0.5 }}>
                                     <ListItemIcon sx={{ minWidth: 28 }}>
                                         <ChevronRightRounded sx={{ fontSize: 24 }} />
                                     </ListItemIcon>
-                                    <ListItemText primary={<a href="https://hub.plvtc.com/" target="_blank" rel="noreferrer">Pean Logistics</a>} />
+                                    <ListItemText primary={<a href="https://foxlog-group.de/" target="_blank" rel="noreferrer">FoxLog-Group</a>} />
                                 </ListItem>
                                 <ListItem sx={{ px: 0.5 }}>
                                     <ListItemIcon sx={{ minWidth: 28 }}>
                                         <ChevronRightRounded sx={{ fontSize: 24 }} />
                                     </ListItemIcon>
-                                    <ListItemText primary={<a href="https://hub.v-spedition.de/" target="_blank" rel="noreferrer">Reamonn Spedition und Lagerung</a>} />
+                                    <ListItemText primary={<a href="https://plvtc.com/" target="_blank" rel="noreferrer">Pean Logistics</a>} />
                                 </ListItem>
                                 <ListItem sx={{ px: 0.5 }}>
                                     <ListItemIcon sx={{ minWidth: 28 }}>
                                         <ChevronRightRounded sx={{ fontSize: 24 }} />
                                     </ListItemIcon>
-                                    <ListItemText primary={<a href="https://hub.foxlog-group.de/" target="_blank" rel="noreferrer">FoxLog-Group</a>} />
+                                    <ListItemText primary={<a href="https://v-spedition.de/" target="_blank" rel="noreferrer">Reamonn Spedition und Lagerung</a>} />
                                 </ListItem>
                             </List>
                         </CardContent>
