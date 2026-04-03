@@ -2,8 +2,6 @@ import React, { lazy, Suspense, useState, useEffect, useRef, useCallback } from 
 
 import { Card, Box, Tabs, Tab, Grid, Dialog, DialogActions, DialogContent, DialogTitle, Button, Typography } from '@mui/material';
 
-import axios from 'axios';
-
 const TileMapComponent = lazy(() => import('../components/tilemap'));
 const TileMap = (props) => (
     <Suspense><TileMapComponent {...props} /></Suspense>
@@ -87,10 +85,11 @@ const Map = () => {
 
     useEffect(() => {
         async function loadIDs() {
-            let resp = await axios({ url: `game-data.json` });
-            setCityIDs(resp.data.city);
-            setCompanyIDs(resp.data.company);
-            setCargoIDs(resp.data.cargo);
+            let resp = await fetch(`game-data.json`);
+            let data = await resp.json();
+            setCityIDs(data.city);
+            setCompanyIDs(data.company);
+            setCargoIDs(data.cargo);
         }
         loadIDs();
     }, []);

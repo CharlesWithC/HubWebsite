@@ -14,8 +14,6 @@ import { Fill, Stroke, Style } from 'ol/style';
 import CircleStyle from 'ol/style/Circle';
 import { Heatmap as HeatmapLayer } from 'ol/layer';
 
-import axios from 'axios';
-
 function calculateCenterPoint(points) {
     if (points.length === 0) {
         throw new Error('Empty points array');
@@ -54,8 +52,8 @@ const TileMap = ({ tilesUrl, title, style, route, points, onPointClick, onBounda
 
             if (!mapRef.current) {
                 const infoUrl = tilesUrl.replace(/\/tiles$/, "") + "/info/TileMapInfo.json";
-                const resp = await axios({ url: infoUrl });
-                const mapInfo = resp.data;
+                const resp = await fetch(infoUrl);
+                const mapInfo = await resp.json();
 
                 const tsProjection = new Projection({
                     code: 'ZOOMIFY',

@@ -116,12 +116,13 @@ const SideBar = (props) => {
                                 <ListItemText primary={menuName[menuID]} />
                             </ListItemButton>
                         </ListItem>;
-                        return <>{menuRoute[menuID].startsWith("/") ?
-                            <Link key={`navlink-${menuID}-${btnIndex}`} to={`${menuRoute[menuID]}`}>
-                                {item}
-                            </Link> :
-                            <a href={menuRoute[menuID]} target="_blank" rel="noreferrer">{item}</a>}
-                        </>;
+                        return <div key={`navlist-${subMenu}-${subIndex}-${menuID}-${btnIndex}`}>
+                            {menuRoute[menuID].startsWith("/") ?
+                                <Link key={`navlink-${menuID}-${btnIndex}`} to={`${menuRoute[menuID]}`}>
+                                    {item}
+                                </Link> :
+                                <a href={menuRoute[menuID]} target="_blank" rel="noreferrer">{item}</a>}
+                        </div>;
                     })}
                 </List>
                 {subIndex !== menu.length - 1 && <Divider key={`divider-${subIndex}`} />}
