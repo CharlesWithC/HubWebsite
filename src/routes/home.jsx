@@ -62,7 +62,7 @@ const Home = () => {
                                 It was created out of <span style={{ color: "#5BA3F5" }}>interest and passion</span>, as a <span style={{ color: "#5BA3F5" }}>technical experiment</span> to architect and optimize interesting things.
                             </Typography>
                             <Typography variant="body1" sx={{ mb: "5px" }}>
-                                Give it a <span style={{ color: "#fcd116" }}>⭐ star</span> and read the <span style={{ color: "#5BA3F5" }}><a href="https://wiki.charlws.com/books/chub/page/2025-dec-an-update" target="_blank" rel="noreferrer">blog post</a></span> to learn about the reason that the project was open-sourced.
+                                Give it a <span style={{ color: "#fcd116" }}>⭐ star</span> and read the <span style={{ color: "#5BA3F5" }}><a href="2025-dec-an-update.html" target="_blank" rel="noreferrer">blog post</a></span> to learn about the reason that the project was open-sourced.
                             </Typography>
                             <Typography variant="body1" sx={{ mb: "5px" }}>
                                 This website is the home page for the open-source project. For managed service providers, check <span style={{ color: "#5BA3F5" }}><a href="https://github.com/CharlesWithC/HubWebsite/wiki/Managed-Service-Providers" target="_blank" rel="noreferrer">this wiki page</a></span>.

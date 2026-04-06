@@ -152,9 +152,7 @@ function App() {
                                     &nbsp;|&nbsp;
                                     <a href="https://discord.gg/wNTaaBZ5qd" target="_blank" rel="noreferrer">Discord</a>
                                     &nbsp;|&nbsp;
-                                    <a href="https://wiki.charlws.com/books/changelog" target="_blank" rel="noreferrer">Change Log</a>
-                                    &nbsp;|&nbsp;
-                                    <a href="https://wiki.charlws.com/" target="_blank" rel="noreferrer">Wiki</a>
+                                    <a href="https://github.com/CharlesWithC/HubWebsite/wiki" target="_blank" rel="noreferrer">Wiki</a>
                                 </Typography>
                             </div>}
                             {!isMd && <div style={{ alignItems: 'center', marginTop: "20px", color: theme.palette.text.secondary }}>
@@ -165,9 +163,7 @@ function App() {
                                     &nbsp;|&nbsp;
                                     <a href="https://discord.gg/wNTaaBZ5qd" target="_blank" rel="noreferrer">Discord</a>
                                     &nbsp;|&nbsp;
-                                    <a href="https://wiki.charlws.com/books/changelog" target="_blank" rel="noreferrer">Change Log</a>
-                                    &nbsp;|&nbsp;
-                                    <a href="https://wiki.charlws.com/" target="_blank" rel="noreferrer">Wiki</a>
+                                    <a href="https://github.com/CharlesWithC/HubWebsite/wiki" target="_blank" rel="noreferrer">Wiki</a>
                                 </Typography>
                             </div>}
                         </footer>
