@@ -150,6 +150,8 @@ function App() {
                                 <Typography variant="body2" sx={{ marginLeft: "auto", alignSelf: 'flex-end', textAlign: "right", fontWeight: "bold" }}>
                                     <a href="https://github.com/CharlesWithC" target="_blank" rel="noreferrer">GitHub</a>
                                     &nbsp;|&nbsp;
+                                    <a href="https://git.charlws.com/users/charles/projects" target="_blank" rel="noreferrer">GitLab</a>
+                                    &nbsp;|&nbsp;
                                     <a href="https://discord.gg/wNTaaBZ5qd" target="_blank" rel="noreferrer">Discord</a>
                                     &nbsp;|&nbsp;
                                     <a href="https://github.com/CharlesWithC/HubWebsite/wiki" target="_blank" rel="noreferrer">Wiki</a>
@@ -160,6 +162,8 @@ function App() {
                                     &copy; 2022-2026 <a href="https://charlws.com/" target="_blank" rel="noreferrer">CharlesWithC</a>
                                     <br />
                                     <a href="https://github.com/CharlesWithC" target="_blank" rel="noreferrer">GitHub</a>
+                                    &nbsp;|&nbsp;
+                                    <a href="https://git.charlws.com/users/charles/projects" target="_blank" rel="noreferrer">GitLab</a>
                                     &nbsp;|&nbsp;
                                     <a href="https://discord.gg/wNTaaBZ5qd" target="_blank" rel="noreferrer">Discord</a>
                                     &nbsp;|&nbsp;

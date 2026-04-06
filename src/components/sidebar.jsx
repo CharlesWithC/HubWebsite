@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Box, Divider, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
-import { HomeRounded, StarRounded, FlightTakeoff, MapRounded, StorageRounded, WebRounded, PeopleRounded } from '@mui/icons-material';
+import { HomeRounded, StarRounded, FlightTakeoff, MapRounded, StorageRounded, WebRounded, LibraryBooksRounded, PeopleRounded } from '@mui/icons-material';
 
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
@@ -67,11 +67,11 @@ const SideBar = (props) => {
         };
     }, []);
 
-    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "discord": "Discord Community", "external": "Managed Service" };
-    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "discord": <PeopleRounded />, "external": <FlightTakeoff /> };
-    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "discord": "https://discord.gg/wNTaaBZ5qd", "external": "https://github.com/CharlesWithC/HubWebsite/wiki/Managed-Service-Providers" };
+    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "wiki": "Knowledge Base", "discord": "Discord Community", "external": "Managed Service" };
+    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "wiki": <LibraryBooksRounded />, "discord": <PeopleRounded />, "external": <FlightTakeoff /> };
+    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "wiki": "https://github.com/CharlesWithC/HubWebsite/wiki", "discord": "https://discord.gg/wNTaaBZ5qd", "external": "https://github.com/CharlesWithC/HubWebsite/wiki/Managed-Service-Providers" };
 
-    let menu = [["home", "features", "live_map"], ["backend", "frontend"], ["discord", "external"]];
+    let menu = [["home", "features", "live_map"], ["backend", "frontend", "wiki"], ["discord", "external"]];
 
     let routeIndex = {};
     for (let i = 0; i < menu.length; i++) {
