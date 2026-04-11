@@ -24,9 +24,65 @@ const images = [
     '/images/screenshot-12.webp',
 ];
 
-const VERIFIED_WEBP = <img width="15px" style={{ display: "inline", position: "relative", top: "-1px" }} src="/images/verified.webp" height="15px" />;
+const HIGHLIGHTS = [
+    {
+        icon: faServer,
+        item: 'Efficient Backend',
+        description: 'API performance and stability are of top priority.',
+        color: '#11b17f',
+    },
+    {
+        icon: faWindowMaximize,
+        item: 'Modern Frontend',
+        description: 'No-bloat web client built under Material Design.',
+        color: '#11b17f',
+    },
+    {
+        icon: faMap,
+        item: 'Route Replay',
+        description: 'See how the drivers reached their destination.',
+        color: '#e28843',
+    },
+    {
+        icon: faImage,
+        item: 'Profile Banner',
+        description: 'Automatically updated profile banner, showing role and statistics.',
+        color: '#e28843',
+    },
+    {
+        icon: faListCheck,
+        item: 'Challenges',
+        description: 'Automatically managed challenges that boosts driver activity.',
+        color: '#e28843',
+    },
+    {
+        icon: faCalendar,
+        item: 'Economy',
+        description: 'Purchase garages and trucks, transfer virtual money and even purchase virtual merchandise.',
+        color: '#e28843',
+    },
+    {
+        icon: faCalendar,
+        item: 'Event Calendar',
+        description: 'See all the events in a calendar, clearly and easily.',
+        color: '#e28843',
+    },
+    {
+        icon: faTrophy,
+        item: 'Advanced Rewards',
+        description: 'Multiple customized ranking systems, job bonus and daily bonus.',
+        color: '#f6529a',
+    },
+    {
+        icon: faChartSimple,
+        item: 'Advanced Statistics',
+        description: 'Real-time statistics on any date/time range and details like most-driven trucks.',
+        color: '#f6529a',
+    },
+];
 
 const Home = () => {
+    const isDesktop = window.innerWidth >= 960;
     const autoplayPlugin = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
     const [emblaRef, emblaApi] = useEmblaCarousel({ axis: 'x' }, [autoplayPlugin.current]);
     const [activeStep, setActiveStep] = useState(0);
@@ -47,13 +103,13 @@ const Home = () => {
         <>
             <Grid container spacing={2}>
                 <Grid size={{ xs: 12, sm: 12, md: 8, lg: 8 }}>
-                    <Card>
+                    <Card sx={{ height: "100%" }}>
                         <CardContent>
                             <Typography variant="h5" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mb: "10px" }}>
                                 The Drivers Hub Project
                             </Typography>
                             <Typography variant="body1" sx={{ mb: "5px" }}>
-                                This is an advanced Drivers Hub solution for Euro Truck Simulator 2 / American Truck Simulator VTCs.
+                                This is an advanced Drivers Hub solution for Euro Truck Simulator 2 / American Truck Simulator communities.
                             </Typography>
                             <Typography variant="body1" sx={{ mb: "5px" }}>
                                 This project was started in May 2022, originally solo-built by <span style={{ color: "#5BA3F5" }}><a href="https://charlws.com/" target="_blank" rel="noreferrer">CharlesWithC</a></span> for <span style={{ color: "#5BA3F5" }}>At The Mile Logistics</span> for internal use, then grew to become a <span style={{ color: "#5BA3F5" }}>public service</span>, and finally <span style={{ color: "#5BA3F5" }}>open-sourced</span> in December 2025.
@@ -72,7 +128,7 @@ const Home = () => {
                     </Card>
                 </Grid>
                 <Grid size={{ xs: 12, sm: 12, md: 4, lg: 4 }}>
-                    <Card>
+                    <Card sx={{ height: "100%" }}>
                         <CardContent>
                             <Typography variant="h5" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mb: "10px" }}>
                                 <HandshakeRounded />&nbsp;&nbsp;Partners
@@ -98,204 +154,42 @@ const Home = () => {
                     </Card>
                 </Grid>
                 <Grid size={{ xs: 12, sm: 12, md: 8, lg: 8 }}>
-                    <Card>
+                    <Card sx={{ height: "100%" }}>
                         <CardContent>
                             <Typography variant="h5" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mb: "10px" }}>
                                 <FontAwesomeIcon icon={faLightbulb} />&nbsp;&nbsp;Highlights
                             </Typography>
-                            {window.innerWidth >= 960 && <Table>
+                            <Table>
                                 <TableBody>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <FontAwesomeIcon icon={faServer} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <b>Efficient Backend</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            API performance and stability are of top priority.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <FontAwesomeIcon icon={faWindowMaximize} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <b>Modern Frontend</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            No-bloat web client built under Material Design.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faMap} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Route Replay</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            See how the drivers reached their destination.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faImage} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Profile Banner</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            Automatically updated profile banner, showing role and statistics.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faListCheck} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Challenges</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            Automatically managed challenges that boosts driver activity.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faCalendar} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Economy</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            Purchase garages and trucks, transfer virtual money and even purchase virtual merchandise.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faCalendar} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Event Calendar</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            See all the events in a calendar, clearly and easily.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <FontAwesomeIcon icon={faTrophy} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <b>Advanced Rewards</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            Multiple customized ranking systems, job bonus and daily bonus.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <FontAwesomeIcon icon={faChartSimple} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <b>Advanced Statistics</b>
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            Real-time statistics on any date/time range and details like most-driven trucks.
-                                        </TableCell>
-                                    </TableRow>
+                                    {HIGHLIGHTS.map((highlight) => (
+                                        <TableRow key={highlight.item}>
+                                            <TableCell sx={{ border: "none", pb: "2px", color: highlight.color }}>
+                                                <FontAwesomeIcon icon={highlight.icon} />
+                                            </TableCell>
+                                            <TableCell sx={{ border: "none", pb: "2px", color: highlight.color }}>
+                                                {isDesktop ? (
+                                                    <b>{highlight.item}</b>
+                                                ) : (
+                                                    <>
+                                                        <b>{highlight.item}</b><br />
+                                                        {highlight.description}
+                                                    </>
+                                                )}
+                                            </TableCell>
+                                            {isDesktop && (
+                                                <TableCell sx={{ border: "none", pb: "2px", color: highlight.color }}>
+                                                    {highlight.description}
+                                                </TableCell>
+                                            )}
+                                        </TableRow>
+                                    ))}
                                 </TableBody>
-                            </Table>}
-                            {window.innerWidth < 960 && <Table>
-                                <TableBody>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <FontAwesomeIcon icon={faServer} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <b>Efficient Backend</b><br />
-                                            API performance and stability are of top priority.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <FontAwesomeIcon icon={faWindowMaximize} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#11b17f" }}>
-                                            <b>Modern Frontend</b><br />
-                                            No-bloat web client built under Material Design.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faMap} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Route Replay</b><br />
-                                            See how the drivers reached their destination.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faImage} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Profile Banner</b><br />
-                                            Automatically updated profile banner, showing role and statistics.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faListCheck} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Challenges</b><br />
-                                            Automatically managed challenges that boosts driver activity.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faCalendar} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Economy</b><br />
-                                            Purchase garages and trucks, transfer virtual money and even purchase virtual merchandise.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <FontAwesomeIcon icon={faCalendar} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#e28843" }}>
-                                            <b>Event Calendar</b><br />
-                                            See all the events in a calendar, clearly and easily.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <FontAwesomeIcon icon={faTrophy} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <b>Advanced Rewards</b><br />
-                                            Multiple customized ranking systems, job bonus and daily bonus.
-                                        </TableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <FontAwesomeIcon icon={faChartSimple} />
-                                        </TableCell>
-                                        <TableCell sx={{ border: "none", pb: "2px", color: "#f6529a" }}>
-                                            <b>Advanced Statistics</b><br />
-                                            Real-time statistics on any date/time range and details like most-driven trucks.
-                                        </TableCell>
-                                    </TableRow>
-                                </TableBody>
-                            </Table>}
+                            </Table>
                         </CardContent>
                     </Card>
                 </Grid>
                 <Grid size={{ xs: 12, sm: 12, md: 4, lg: 4 }}>
-                    <Card>
+                    <Card sx={{ height: "100%" }}>
                         <CardContent>
                             <Typography variant="h5" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mb: "10px" }}>
                                 <FontAwesomeIcon icon={faCrown} />&nbsp;&nbsp;Special Recognition
@@ -303,7 +197,7 @@ const Home = () => {
                             <Typography variant="body1" sx={{ mb: "10px" }}>
                                 These are communities that provided extraordinary support to the project, especially in the early period.
                             </Typography>
-                            <List>
+                            <List sx={{ mb: "10px" }}>
                                 <ListItem sx={{ px: 0.5 }}>
                                     <ListItemIcon sx={{ minWidth: 28 }}>
                                         <ChevronRightRounded sx={{ fontSize: 24 }} />
@@ -326,12 +220,6 @@ const Home = () => {
                                     <ListItemIcon sx={{ minWidth: 28 }}>
                                         <ChevronRightRounded sx={{ fontSize: 24 }} />
                                     </ListItemIcon>
-                                    <ListItemText primary={<a href="https://plvtc.com/" target="_blank" rel="noreferrer">Pean Logistics</a>} />
-                                </ListItem>
-                                <ListItem sx={{ px: 0.5 }}>
-                                    <ListItemIcon sx={{ minWidth: 28 }}>
-                                        <ChevronRightRounded sx={{ fontSize: 24 }} />
-                                    </ListItemIcon>
                                     <ListItemText primary={<a href="https://v-spedition.de/" target="_blank" rel="noreferrer">Reamonn Spedition und Lagerung</a>} />
                                 </ListItem>
                             </List>
@@ -339,7 +227,7 @@ const Home = () => {
                     </Card>
                 </Grid>
                 <Grid size={12}>
-                    <Card>
+                    <Card sx={{ height: "100%" }}>
                         <CardContent>
                             <Typography variant="h5" sx={{ display: 'flex', alignItems: 'center', fontWeight: "bold", mb: "10px" }}>
                                 <FontAwesomeIcon icon={faDesktop} />&nbsp;&nbsp;Screenshots
