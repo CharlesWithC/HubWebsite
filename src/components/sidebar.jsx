@@ -67,11 +67,11 @@ const SideBar = (props) => {
         };
     }, []);
 
-    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "wiki": "Knowledge Base", "discord": "Discord Community", "external": "Managed Service" };
-    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "wiki": <LibraryBooksRounded />, "discord": <PeopleRounded />, "external": <FlightTakeoff /> };
-    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "wiki": "https://github.com/CharlesWithC/HubWebsite/wiki", "discord": "https://discord.gg/wNTaaBZ5qd", "external": "https://github.com/CharlesWithC/HubWebsite/wiki/Managed-Service-Providers" };
+    const menuName = { "home": "Home", "features": "Features", "live_map": "Live Map", "backend": "Backend Repo", "frontend": "Frontend Repo", "wiki": "Knowledge Base", "discord": "Discord Community" };
+    const menuIcon = { "home": <HomeRounded />, "features": <StarRounded />, "live_map": <MapRounded />, "backend": <StorageRounded />, "frontend": <WebRounded />, "wiki": <LibraryBooksRounded />, "discord": <PeopleRounded /> };
+    const menuRoute = { "home": "/", "features": "/features", "live_map": "/map", "backend": "https://github.com/CharlesWithC/HubBackend", "frontend": "https://github.com/CharlesWithC/HubFrontend", "wiki": "https://github.com/CharlesWithC/HubWebsite/wiki", "discord": "https://discord.gg/wNTaaBZ5qd" };
 
-    let menu = [["home", "features", "live_map"], ["backend", "frontend", "wiki"], ["discord", "external"]];
+    let menu = [["home", "features", "live_map"], ["backend", "frontend", "wiki"], ["discord"]];
 
     let routeIndex = {};
     for (let i = 0; i < menu.length; i++) {
